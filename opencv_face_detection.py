@@ -1,3 +1,7 @@
+"""
+Reference : https://github.com/ageitgey/face_recognition/blob/master/examples/facerec_from_webcam_faster.py
+"""
+
 # importing the required libraries
 import os
 import cv2
@@ -85,6 +89,7 @@ while True:
     # display the video
     cv2.imshow("Webcam Video", current_frame)
 
+    # Press Q key to turn off
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
